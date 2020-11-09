@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_09_182445) do
+ActiveRecord::Schema.define(version: 2020_11_09_190715) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2020_11_09_182445) do
 
   create_table "training_sessions", force: :cascade do |t|
     t.integer "trainer_id"
-    t.integer "user_id"
+    t.integer "admin_user_id"
     t.boolean "open"
     t.boolean "confirmed"
     t.datetime "start_time"
